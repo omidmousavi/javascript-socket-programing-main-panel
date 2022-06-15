@@ -43,6 +43,7 @@
             function send_mess() {
                 websocket.send(document.getElementById('input_message').value);  
                 document.getElementById("input_message").value = "";
+                document.getElementById("input_message").focus();
             }
 
             function connect() {
@@ -119,7 +120,4 @@
             <textarea id="Recived_data" readonly></textarea>
         </main>
     </body>
-    <script>
-        initWebSocket_Server();
-    </script>
 </html>
