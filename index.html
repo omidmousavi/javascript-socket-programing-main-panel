@@ -8,7 +8,7 @@
 
             var websocket;
 
-            function initWebSocket_Server(gateway) {
+            function initWebSocket(gateway) {
                 // Trying to open a WebSocket connection...
                 try {
                     websocket = new WebSocket(gateway);   
@@ -52,7 +52,7 @@
                     alert("please fill input");
                     return;
                 }
-                initWebSocket_Server(url);
+                initWebSocket(url);
                 document.getElementById("connect_btn").disabled = true;
                 document.getElementById("input_url").disabled = true;
             }
